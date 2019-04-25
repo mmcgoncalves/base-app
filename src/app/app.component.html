@@ -5,6 +5,7 @@
     </div>
   </div>
 
+  
        
   <div class="row" style="text-align:center">
     <label>
@@ -15,6 +16,23 @@
   
   <div class="row">
       <button (click)="download()">download</button>
+  </div>
+
+  <div class="row">
+    <button (click)="gerarMenu()">Gerar Menu</button>
+  </div>
+
+  <div class="row">
+   <div class="col-sm-6">      
+      <pre>{{rotinas | json}}</pre>     
+   </div>
+   <div class="col-sm-6">
+      <pre>
+          {{menu | json}}
+      </pre>
+     
+  </div>
+    
   </div>
 
 </div>
