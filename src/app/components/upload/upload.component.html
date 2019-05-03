@@ -1,0 +1,27 @@
+<div class="row">
+    <label>
+      <input type="file" (change)="selectFile($event)">
+    </label>
+    <button [disabled]="!selectedFiles"  (click)="upload()">Upload</button>
+  </div>      
+  
+  <div class="row">
+      <button (click)="download()">download</button>
+  </div>
+
+  <div class="row">
+    <button (click)="gerarMenu()">Gerar Menu</button>
+  </div>
+
+  <div class="row">
+   <div class="col-sm-6">      
+      <pre>{{rotinas | json}}</pre>     
+   </div>
+   <div class="col-sm-6">
+      <pre>
+          {{menu | json}}
+      </pre>
+     
+  </div>
+    
+  </div>

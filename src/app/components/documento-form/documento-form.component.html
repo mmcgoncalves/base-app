@@ -1,0 +1,20 @@
+<form #form="ngForm" (ngSubmit)="upload(form)" novalidate autocomplete="off">
+
+  <div class="form-group">
+    <label for="numero">Número</label>
+    <input type="number" class="form-control" [(ngModel)]="documento.numero"  name="numero">
+    
+  </div>
+
+  
+
+
+  <div class="form-group">
+    <label for=""></label>
+    <input type="file" class="form-control-file" (change)="selectFile($event)" placeholder="" aria-describedby="fileHelpId">
+    <small id="fileHelpId" class="form-text text-muted">Help text</small>
+  </div>
+
+  <button type="submit" class="btn btn-primary"><i class="fa fa-dot-circle-o"></i> Salvar</button>
+
+</form>
